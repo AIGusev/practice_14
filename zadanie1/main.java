@@ -1,31 +1,13 @@
-package practice_14.zadanie2;
+package practice_14.zadanie1;
 
-public class DiscountCalculator {
+public class main {
+    public static void main(String[] args) {
 
-    private final double LOYAL_FIRST_DISCOUNT = 0.10;
-    private final double LOYAL_DISCOUNT = 0.05;
-    private final double COUPON_DISCOUNT = 0.07;
-    private final double DISCOUNT = 0.02;
+        MathOperations mathOperations = new MathOperations();
 
-    public double calculateDiscount(double price, boolean isLoyalCustomer,
-                                    boolean isFirstPurchase, boolean hasCoupon) {
+        System.out.println(mathOperations.add(5, 5));
+        System.out.println(mathOperations.add(5, 5, 5));
+        System.out.println(mathOperations.add(5, 5, 5, 5));
 
-        if (price <= 0) {
-            return 0;
-        }
-
-        double discountRate;
-
-        if (isLoyalCustomer && isFirstPurchase) {
-            discountRate = LOYAL_FIRST_DISCOUNT;
-        } else if (isLoyalCustomer) {
-            discountRate = LOYAL_DISCOUNT;
-        } else if (hasCoupon) {
-            discountRate = COUPON_DISCOUNT;
-        } else {
-            discountRate = DISCOUNT;
-        }
-
-        return price - (price * discountRate);
     }
 }
