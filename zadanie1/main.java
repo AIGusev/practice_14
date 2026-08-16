@@ -5,9 +5,9 @@ public class main {
 
         MathOperations mathOperations = new MathOperations();
 
-        System.out.println(mathOperations.add(new int[] {5, 5}));
-        System.out.println(mathOperations.add(new int[] {5, 5, 5}));
-        System.out.println(mathOperations.add(new int[] {5, 5, 5, 5}));
+        System.out.println(mathOperations.add(5, 5));
+        System.out.println(mathOperations.add(5, 5, 5));
+        System.out.println(mathOperations.add(5, 5, 5, 5));
 
     }
 }
