@@ -5,9 +5,9 @@ public class Main {
 
         DiscountCalculator calc = new DiscountCalculator();
 
-        System.out.println("Обычный клиент: " + calc.calculateDiscount(1000, false, false, false));    // 980
-        System.out.println("С купоном: " + calc.calculateDiscount(1000, false, false, true));          // 930
-        System.out.println("Лояльный: " + calc.calculateDiscount(1000, true, false, false));           // 950
-        System.out.println("Лояльный + первая покупка: " + calc.calculateDiscount(1000, true, true, false)); // 900
+        System.out.println("Обычный клиент: " + calc.calculateDiscount(1000, false, false, false));
+        System.out.println("С купоном: " + calc.calculateDiscount(1000, false, false, true));
+        System.out.println("Лояльный: " + calc.calculateDiscount(1000, true, false, false));
+        System.out.println("Лояльный + первая покупка: " + calc.calculateDiscount(1000, true, true, false)); 
     }
 }
