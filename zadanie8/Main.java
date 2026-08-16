@@ -5,6 +5,6 @@ public class Main {
 
         Message message = new EmailSender();
         NotificationService notificationService = new NotificationService(message);
-        message.sendMessage("Отправлено");
+        notificationService.sendNotification("Отправлено");
     }
 }
